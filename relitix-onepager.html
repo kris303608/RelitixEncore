@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ── PRIMARY META ── -->
+<title>Encore by Relitix — Every Contract is a Deposit. The Lakehouse is the Vault.</title>
+<meta name="description" content="Encore by Relitix transforms real estate brokerage contracts into a sovereign data asset. Secure. Structured. Sovereign. Discover how the Encore Lakehouse compounds transaction intelligence into a lasting competitive moat.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Relitix, Inc.">
+<meta name="keywords" content="real estate data, brokerage analytics, contract intelligence, data lakehouse, AI digital workers, proptech, Relitix, Encore platform, sovereign data">
+
+<!-- ── OPEN GRAPH (LinkedIn, Facebook, Slack, iMessage) ── -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kris303608.github.io/RelitixEncore">
+<meta property="og:title" content="Encore by Relitix — Every Contract is a Deposit.">
+<meta property="og:description" content="Real estate brokerages sit on a goldmine of proprietary transaction intelligence. Encore extracts, structures, and compounds that data into a sovereign asset that grows more valuable with every deal. Secure. Structured. Sovereign.">
+<meta property="og:image" content="https://kris303608.github.io/RelitixEncore/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Encore by Relitix — The Data Compounding Effect">
+<meta property="og:site_name" content="Encore by Relitix">
+<meta property="og:locale" content="en_US">
+
+<!-- ── TWITTER / X CARD ── -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Encore by Relitix — Every Contract is a Deposit.">
+<meta name="twitter:description" content="Real estate brokerages sit on a goldmine of proprietary transaction intelligence. Encore structures and compounds that data into a sovereign competitive moat.">
+<meta name="twitter:image" content="https://kris303608.github.io/RelitixEncore/og-image.png">
+<meta name="twitter:image:alt" content="Encore by Relitix — The Data Compounding Effect">
+
+<!-- ── FAVICON (inline SVG → base64, no external file needed) ── -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23080b12'/%3E%3Crect x='14' y='36' width='7' height='16' fill='%23c8a84b'/%3E%3Crect x='24' y='28' width='7' height='24' fill='%23c8a84b'/%3E%3Crect x='34' y='20' width='7' height='32' fill='%23c8a84b'/%3E%3Cline x1='8' y1='36' x2='24' y2='12' stroke='%23c8a84b' stroke-width='3' stroke-linecap='round'/%3E%3Cline x1='24' y1='12' x2='44' y2='36' stroke='%23c8a84b' stroke-width='3' stroke-linecap='round'/%3E%3Cline x1='8' y1='52' x2='44' y2='52' stroke='%23c8a84b' stroke-width='3' stroke-linecap='round'/%3E%3Cline x1='8' y1='36' x2='8' y2='52' stroke='%23c8a84b' stroke-width='3' stroke-linecap='round'/%3E%3Cline x1='44' y1='36' x2='44' y2='52' stroke='%23c8a84b' stroke-width='3' stroke-linecap='round'/%3E%3Cline x1='44' y1='35' x2='54' y2='20' stroke='%23c8a84b' stroke-width='2.5' stroke-linecap='round'/%3E%3Cpolyline points='48,20 54,20 54,28' fill='none' stroke='%23c8a84b' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23080b12'/%3E%3Crect x='14' y='36' width='7' height='16' fill='%23c8a84b'/%3E%3Crect x='24' y='28' width='7' height='24' fill='%23c8a84b'/%3E%3Crect x='34' y='20' width='7' height='32' fill='%23c8a84b'/%3E%3Cline x1='8' y1='36' x2='24' y2='12' stroke='%23c8a84b' stroke-width='3' stroke-linecap='round'/%3E%3Cline x1='24' y1='12' x2='44' y2='36' stroke='%23c8a84b' stroke-width='3' stroke-linecap='round'/%3E%3Cline x1='8' y1='52' x2='44' y2='52' stroke='%23c8a84b' stroke-width='3' stroke-linecap='round'/%3E%3Cline x1='8' y1='36' x2='8' y2='52' stroke='%23c8a84b' stroke-width='3' stroke-linecap='round'/%3E%3Cline x1='44' y1='36' x2='44' y2='52' stroke='%23c8a84b' stroke-width='3' stroke-linecap='round'/%3E%3Cline x1='44' y1='35' x2='54' y2='20' stroke='%23c8a84b' stroke-width='2.5' stroke-linecap='round'/%3E%3Cpolyline points='48,20 54,20 54,28' fill='none' stroke='%23c8a84b' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C%2Fsvg%3E">
+<meta name="theme-color" content="#080b12">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Mono:wght@300;400;500&display=swap');
+
+:root {
+  --ink:        #080b12;
+  --ink2:       #0d1220;
+  --gold:       #c8a84b;
+  --gold-lt:    #e8d08a;
+  --gold-dk:    #8a6e28;
+  --paper:      #f0ebe0;
+  --mist:       rgba(240,235,224,0.82);
+  --dim:        rgba(240,235,224,0.78);
+  --teal:       #1e8080;
+  --teal-lt:    #2aacac;
+  --rust:       #9e3a22;
+  --rust-lt:    #d05030;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--ink);
+  color: var(--paper);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── GRAIN OVERLAY ── */
+body::after {
+  content: '';
+  position: fixed; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  pointer-events: none; z-index: 9999; opacity: 0.5;
+}
+
+/* ── GRID LINES ── */
+.grid {
+  position: fixed; inset: 0; pointer-events: none; z-index: 0;
+  background-image:
+    linear-gradient(rgba(200,168,75,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(200,168,75,0.035) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* ── PAGE WRAPPER ── */
+.page {
+  position: relative; z-index: 1;
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 48px 80px;
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity:0; transform: translateY(22px); }
+  to   { opacity:1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity:0; } to { opacity:1; }
+}
+@keyframes drawLine {
+  from { width: 0; } to { width: 100%; }
+}
+@keyframes drawLineV {
+  from { height: 0; } to { height: 100%; }
+}
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 rgba(200,168,75,0); }
+  50%       { box-shadow: 0 0 20px rgba(200,168,75,0.18); }
+}
+@keyframes countUp {
+  from { opacity: 0; transform: scale(0.8); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes shimmer {
+  0%   { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+.reveal {
+  opacity: 0;
+  animation: fadeUp 0.7s ease forwards;
+}
+
+/* stagger delays */
+.d1 { animation-delay: 0.1s; }
+.d2 { animation-delay: 0.25s; }
+.d3 { animation-delay: 0.4s; }
+.d4 { animation-delay: 0.55s; }
+.d5 { animation-delay: 0.7s; }
+.d6 { animation-delay: 0.85s; }
+.d7 { animation-delay: 1.0s; }
+.d8 { animation-delay: 1.15s; }
+
+/* ══════════════════════════════════════════
+   HEADER
+══════════════════════════════════════════ */
+header {
+  padding: 52px 0 40px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(200,168,75,0.15);
+  margin-bottom: 56px;
+}
+
+.header-logo svg text { fill: var(--gold); }
+
+.header-right {
+  text-align: right;
+  padding-top: 6px;
+}
+.header-right .doc-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 4px;
+  color: rgba(200,168,75,0.45);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.header-right .doc-title {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--mist);
+  letter-spacing: 0.5px;
+}
+
+/* ══════════════════════════════════════════
+   HERO STATEMENT
+══════════════════════════════════════════ */
+.hero {
+  margin-bottom: 64px;
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.hero-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-eyebrow {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 5px;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 5vw, 60px);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.5px;
+  color: var(--paper);
+  margin-bottom: 24px;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.hero-body {
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--mist);
+  line-height: 1.75;
+}
+
+.hero-stat-bar {
+  flex-shrink: 0;
+  width: 190px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 4px;
+}
+
+.hero-stat {
+  text-align: right;
+  padding: 16px 20px;
+  border: 1px solid rgba(200,168,75,0.18);
+  border-radius: 3px;
+  background: rgba(200,168,75,0.04);
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+.hero-stat:nth-child(2) { animation-delay: 1.3s; }
+.hero-stat:nth-child(3) { animation-delay: 2.6s; }
+
+.stat-num {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.stat-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: rgba(240,235,224,0.65);
+  text-transform: uppercase;
+}
+
+/* ══════════════════════════════════════════
+   SECTION LABELS
+══════════════════════════════════════════ */
+.section-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.section-label::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: var(--gold);
+  opacity: 0.5;
+}
+
+/* ══════════════════════════════════════════
+   EXTRACTION DEPTH — SECTION 1
+══════════════════════════════════════════ */
+.extraction-section {
+  margin-bottom: 72px;
+}
+
+.extraction-flow {
+  display: grid;
+  grid-template-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
+  align-items: stretch;
+  gap: 0;
+  margin-bottom: 32px;
+}
+
+.flow-card {
+  border: 1px solid rgba(200,168,75,0.12);
+  border-radius: 4px;
+  padding: 20px 16px;
+  position: relative;
+  transition: border-color 0.3s;
+}
+.flow-card:hover { border-color: rgba(200,168,75,0.35); }
+
+.flow-card .fc-step {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.fc-raw   { background: rgba(30,128,128,0.06); }
+.fc-raw   .fc-step { color: var(--teal-lt); }
+.fc-raw   .fc-bar  { background: rgba(42,172,172,0.25); }
+
+.fc-extract { background: rgba(158,58,34,0.06); }
+.fc-extract .fc-step { color: var(--rust-lt); }
+.fc-extract .fc-bar  { background: rgba(208,80,48,0.25); }
+
+.fc-struct { background: rgba(200,168,75,0.05); }
+.fc-struct .fc-step { color: var(--gold); }
+.fc-struct .fc-bar  { background: rgba(200,168,75,0.2); }
+
+.fc-lake { background: rgba(200,168,75,0.09); border-color: rgba(200,168,75,0.3); box-shadow: 0 0 28px rgba(200,168,75,0.08); }
+.fc-lake .fc-step { color: var(--gold-lt); }
+.fc-lake .fc-bar  { background: rgba(200,168,75,0.35); }
+
+.fc-icon { font-size: 20px; margin-bottom: 10px; }
+.fc-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--paper);
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+}
+.fc-items {
+  list-style: none;
+}
+.fc-items li {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--dim);
+  line-height: 1.8;
+  padding-left: 10px;
+  position: relative;
+}
+.fc-items li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  opacity: 0.5;
+}
+
+/* Depth bar at bottom of card */
+.fc-depth {
+  margin-top: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background: rgba(255,255,255,0.05);
+  overflow: hidden;
+}
+.fc-bar {
+  height: 100%;
+  border-radius: 2px;
+  animation: drawLine 1.2s ease forwards;
+  animation-delay: 0.3s;
+  width: 0;
+}
+
+/* Arrow connectors */
+.flow-arrow-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flow-arrow-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+.arrow-shaft {
+  width: 1px;
+  height: 0;
+  background: linear-gradient(to bottom, rgba(200,168,75,0.2), rgba(200,168,75,0.5));
+  animation: drawLineV 0.5s ease forwards;
+  animation-delay: 0.8s;
+}
+.arrow-head {
+  color: var(--gold);
+  font-size: 10px;
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+  animation-delay: 1.1s;
+}
+.arrow-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 7px;
+  color: rgba(200,168,75,0.3);
+  letter-spacing: 1px;
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+  margin-top: 4px;
+  opacity: 0;
+  animation: fadeIn 0.4s ease forwards;
+  animation-delay: 1.2s;
+}
+
+/* Depth legend */
+.depth-legend {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+.depth-legend-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--dim);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.depth-legend-bar {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(to right, rgba(42,172,172,0.3), rgba(200,168,75,0.8));
+  border-radius: 1px;
+}
+.depth-legend-end {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--gold);
+  letter-spacing: 2px;
+}
+
+/* ══════════════════════════════════════════
+   LAKEHOUSE STRUCTURE — SECTION 2
+══════════════════════════════════════════ */
+.lakehouse-section {
+  margin-bottom: 72px;
+}
+
+.lake-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.lake-layer {
+  border-radius: 4px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.lake-layer::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+}
+
+.ll-bronze {
+  background: rgba(138,110,40,0.1);
+  border: 1px solid rgba(138,110,40,0.25);
+}
+.ll-bronze::before { background: linear-gradient(to right, transparent, var(--gold-dk), transparent); }
+
+.ll-silver {
+  background: rgba(200,168,75,0.08);
+  border: 1px solid rgba(200,168,75,0.25);
+}
+.ll-silver::before { background: linear-gradient(to right, transparent, var(--gold), transparent); }
+
+.ll-gold {
+  background: rgba(200,168,75,0.13);
+  border: 1px solid rgba(200,168,75,0.4);
+  box-shadow: 0 0 30px rgba(200,168,75,0.1);
+}
+.ll-gold::before { background: linear-gradient(to right, transparent, var(--gold-lt), transparent); }
+
+.ll-icon { font-size: 22px; margin-bottom: 10px; }
+.ll-tier {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.ll-bronze .ll-tier { color: var(--gold-dk); }
+.ll-silver .ll-tier { color: var(--gold); }
+.ll-gold   .ll-tier { color: var(--gold-lt); }
+
+.ll-title { font-size: 17px; font-weight: 600; color: var(--paper); margin-bottom: 12px; }
+
+.ll-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 12px;
+}
+.ll-tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  padding: 3px 8px;
+  border-radius: 2px;
+  letter-spacing: 1px;
+}
+.ll-bronze .ll-tag { background: rgba(138,110,40,0.15); color: rgba(200,168,75,0.55); border: 1px solid rgba(138,110,40,0.2); }
+.ll-silver .ll-tag { background: rgba(200,168,75,0.1);  color: rgba(200,168,75,0.7);  border: 1px solid rgba(200,168,75,0.2); }
+.ll-gold   .ll-tag { background: rgba(200,168,75,0.15); color: var(--gold-lt);         border: 1px solid rgba(200,168,75,0.3); }
+
+.ll-desc {
+  font-size: 13px;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--dim);
+  line-height: 1.6;
+}
+
+/* Three pillars */
+.pillar-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  border: 1px solid rgba(200,168,75,0.12);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.pillar-cell {
+  padding: 20px 22px;
+  border-right: 1px solid rgba(200,168,75,0.1);
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.pillar-cell:last-child { border-right: none; }
+
+.pillar-icon-wrap {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  font-size: 16px;
+}
+.pi-secure   .pillar-icon-wrap { background: rgba(42,172,172,0.1); border: 1px solid rgba(42,172,172,0.25); }
+.pi-sovereign .pillar-icon-wrap { background: rgba(200,168,75,0.1); border: 1px solid rgba(200,168,75,0.25); }
+.pi-structured .pillar-icon-wrap { background: rgba(158,58,34,0.1); border: 1px solid rgba(158,58,34,0.25); }
+
+.pillar-text-wrap {}
+.pillar-head {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.pi-secure    .pillar-head { color: var(--teal-lt); }
+.pi-sovereign .pillar-head { color: var(--gold); }
+.pi-structured .pillar-head { color: var(--rust-lt); }
+
+.pillar-body {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--dim);
+  line-height: 1.6;
+}
+
+/* ══════════════════════════════════════════
+   COMPOUNDING VALUE — SECTION 3
+══════════════════════════════════════════ */
+.compound-section { margin-bottom: 72px; }
+
+.compound-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 32px;
+  align-items: start;
+}
+
+/* Chart */
+.compound-chart {
+  position: relative;
+  height: 260px;
+}
+
+.chart-area {
+  position: absolute;
+  inset: 0 0 32px 40px;
+}
+
+/* Y axis labels */
+.y-labels {
+  position: absolute;
+  left: 0; top: 0; bottom: 32px;
+  width: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.y-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  color: var(--dim);
+  padding-right: 6px;
+}
+
+/* X axis labels */
+.x-labels {
+  position: absolute;
+  left: 40px; right: 0; bottom: 0;
+  height: 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.x-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  color: var(--dim);
+}
+
+/* SVG chart */
+.chart-svg {
+  position: absolute;
+  inset: 0;
+}
+
+/* The "public data" baseline */
+.line-public {
+  stroke: rgba(138,154,170,0.4);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 4;
+  fill: none;
+}
+
+/* The compound curve */
+.line-compound {
+  stroke: var(--gold);
+  stroke-width: 2.5;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: drawPath 2.2s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes drawPath {
+  to { stroke-dashoffset: 0; }
+}
+
+.area-compound {
+  fill: url(#areaGrad);
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 2s;
+}
+
+/* Annotation markers */
+.chart-dot {
+  fill: var(--ink);
+  stroke: var(--gold);
+  stroke-width: 2;
+}
+.chart-anno {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  fill: var(--gold-lt);
+}
+.chart-anno-dim {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  fill: rgba(138,154,170,0.5);
+}
+
+/* Grid lines inside chart */
+.chart-gridline {
+  stroke: rgba(200,168,75,0.05);
+  stroke-width: 1;
+}
+
+/* Compound right panel */
+.compound-right {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 8px;
+}
+
+.compound-milestone {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 14px 16px;
+  border-radius: 3px;
+  border: 1px solid rgba(200,168,75,0.1);
+  background: rgba(200,168,75,0.03);
+  position: relative;
+  overflow: hidden;
+}
+
+.compound-milestone::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 2px;
+}
+
+.cm-y1::before  { background: rgba(200,168,75,0.25); }
+.cm-y2::before  { background: rgba(200,168,75,0.45); }
+.cm-y3::before  { background: rgba(200,168,75,0.65); }
+.cm-y5::before  { background: rgba(200,168,75,0.85); }
+.cm-y10::before { background: var(--gold-lt); box-shadow: 0 0 8px rgba(200,168,75,0.4); }
+
+.cm-year {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--gold);
+  letter-spacing: 2px;
+  white-space: nowrap;
+  padding-top: 2px;
+  min-width: 28px;
+}
+
+.cm-content {}
+.cm-headline {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--paper);
+  margin-bottom: 3px;
+}
+.cm-body {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  color: var(--dim);
+  line-height: 1.7;
+}
+
+/* ══════════════════════════════════════════
+   THE MOAT — CALLOUT SECTION
+══════════════════════════════════════════ */
+.moat-section {
+  margin-bottom: 64px;
+}
+
+.moat-banner {
+  border: 1px solid rgba(200,168,75,0.3);
+  border-radius: 4px;
+  background: linear-gradient(135deg, rgba(200,168,75,0.06) 0%, rgba(200,168,75,0.02) 100%);
+  padding: 36px 44px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 60px rgba(200,168,75,0.06);
+}
+
+.moat-banner::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(200,168,75,0.6), transparent);
+}
+
+.moat-item {
+  text-align: center;
+  padding: 0 24px;
+  border-right: 1px solid rgba(200,168,75,0.1);
+}
+.moat-item:last-child { border-right: none; }
+
+.moat-number {
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--gold);
+  margin-bottom: 6px;
+  letter-spacing: -1px;
+  font-variant-numeric: tabular-nums;
+}
+.moat-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--dim);
+  margin-bottom: 10px;
+}
+.moat-desc {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--mist);
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* ══════════════════════════════════════════
+   FOOTER / CLOSING
+══════════════════════════════════════════ */
+footer {
+  border-top: 1px solid rgba(200,168,75,0.12);
+  padding-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left {}
+.footer-tagline {
+  font-size: 22px;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--mist);
+  margin-bottom: 6px;
+}
+.footer-tagline em { color: var(--gold); font-style: normal; }
+
+.footer-sub {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: var(--dim);
+  text-transform: uppercase;
+}
+
+.footer-right {
+  text-align: right;
+}
+.footer-url {
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  color: rgba(200,168,75,0.4);
+  letter-spacing: 2px;
+}
+.footer-confidential {
+  font-family: 'DM Mono', monospace;
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--dim);
+  margin-top: 4px;
+}
+
+/* ── PITCH DECK CTA ── */
+.pitch-cta {
+  margin: 0 0 56px;
+}
+.pitch-cta-inner {
+  border: 1px solid rgba(200,168,75,0.3);
+  border-radius: 4px;
+  background: linear-gradient(135deg, rgba(200,168,75,0.07) 0%, rgba(200,168,75,0.02) 100%);
+  padding: 40px 52px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.pitch-cta-inner::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(to right, transparent, rgba(200,168,75,0.6), transparent);
+}
+.pitch-cta-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: rgba(200,168,75,0.55);
+  margin-bottom: 8px;
+}
+.pitch-cta-headline {
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--paper);
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+}
+.pitch-cta-sub {
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--mist);
+  line-height: 1.6;
+  max-width: 480px;
+}
+.pitch-cta-btn {
+  margin-left: auto;
+  flex-shrink: 0;
+  display: inline-block;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--gold);
+  padding: 14px 28px;
+  border-radius: 3px;
+  white-space: nowrap;
+  transition: background 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 0 24px rgba(200,168,75,0.25);
+}
+.pitch-cta-btn:hover {
+  background: var(--gold-lt);
+  box-shadow: 0 0 36px rgba(200,168,75,0.4);
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(200,168,75,0.2), transparent);
+  margin: 0 0 24px;
+}
+
+/* Highlight quote */
+.pull-quote {
+  border-left: 2px solid var(--gold);
+  padding: 6px 0 6px 20px;
+  margin: 28px 0;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--mist);
+  line-height: 1.55;
+  max-width: 640px;
+}
+.pull-quote em { color: var(--gold); font-style: normal; }
+
+/* ── Print ── */
+@media print {
+  body::after { display: none; }
+  .grid { display: none; }
+  body { background: #080b12; }
+  .reveal { opacity: 1; animation: none; }
+}
+
+/* ══════════════════════════════════════════
+   MOBILE — max 768px
+══════════════════════════════════════════ */
+@media (max-width: 768px) {
+
+  /* Page padding */
+  .page { padding: 0 20px 60px; }
+
+  /* Header */
+  header {
+    flex-direction: column;
+    gap: 12px;
+    padding: 28px 0 24px;
+    margin-bottom: 32px;
+  }
+  .header-right { text-align: left; }
+
+  /* Hero — stack vertically */
+  .hero {
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 40px;
+  }
+  .hero h1 { font-size: clamp(32px, 8vw, 48px); }
+  .hero-body { font-size: 16px; }
+  .hero-stat-bar {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .hero-stat {
+    flex: 1;
+    min-width: 120px;
+    text-align: center;
+    padding: 12px 10px;
+  }
+  .stat-num { font-size: 28px; }
+
+  /* Section labels */
+  .section-label { font-size: 8px; letter-spacing: 3px; margin-bottom: 18px; }
+
+  /* Pull quotes */
+  .pull-quote { font-size: 16px; margin: 18px 0; }
+
+  /* Extraction flow — vertical stack */
+  .extraction-flow {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  /* Hide the vertical arrow columns on mobile */
+  .flow-arrow-col { display: none; }
+  .flow-card {
+    margin-bottom: 8px;
+    border-radius: 4px;
+  }
+  /* Show a simple horizontal rule instead of arrows */
+  .flow-card + .flow-card { border-top: 1px solid rgba(200,168,75,0.1); }
+
+  /* Depth legend */
+  .depth-legend { margin-top: 8px; }
+
+  /* Lakehouse grid — single column */
+  .lake-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  /* Pillars row — stack vertically */
+  .pillar-row { flex-direction: column; }
+  .pillar-cell {
+    border-right: none;
+    border-bottom: 1px solid rgba(200,168,75,0.1);
+  }
+  .pillar-cell:last-child { border-bottom: none; }
+
+  /* Compound layout — stack vertically */
+  .compound-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .compound-chart { height: 200px; }
+  .compound-right { gap: 10px; }
+  .cm-headline { font-size: 13px; }
+  .cm-body { font-size: 9px; }
+
+  /* Moat banner — stack to 1 column */
+  .moat-banner {
+    grid-template-columns: 1fr;
+    padding: 24px 28px;
+    gap: 0;
+  }
+  .moat-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(200,168,75,0.1);
+    padding: 20px 0;
+    text-align: left;
+  }
+  .moat-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .moat-number { font-size: 42px; }
+
+  /* Pitch CTA — stack vertically */
+  .pitch-cta-inner {
+    flex-direction: column;
+    gap: 20px;
+    padding: 28px 24px;
+    align-items: flex-start;
+  }
+  .pitch-cta-btn {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 16px 20px;
+    font-size: 12px;
+  }
+  .pitch-cta-headline { font-size: 22px; }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 24px;
+  }
+  .footer-right { text-align: left; }
+  .footer-tagline { font-size: 18px; }
+
+  /* Sections spacing */
+  .extraction-section,
+  .lakehouse-section,
+  .compound-section,
+  .moat-section { margin-bottom: 48px; }
+
+  /* Intel grid on page 5 */
+  .lake-grid { grid-template-columns: 1fr; }
+}
+
+/* ══════════════════════════════════════════
+   SMALL MOBILE — max 480px
+══════════════════════════════════════════ */
+@media (max-width: 480px) {
+  .page { padding: 0 16px 50px; }
+  .hero h1 { font-size: 30px; }
+  .hero-stat-bar { flex-direction: column; }
+  .hero-stat { min-width: unset; width: 100%; }
+  .stat-num { font-size: 32px; }
+  .moat-number { font-size: 36px; }
+  .pull-quote { font-size: 15px; }
+  header { padding: 20px 0 18px; margin-bottom: 24px; }
+  .pitch-cta-headline { font-size: 20px; }
+  .fc-title { font-size: 14px; }
+  .fc-items li { font-size: 10px; }
+}
+</style>
+</head>
+<body>
+<div class="grid"></div>
+
+<div class="page">
+
+  <!-- ══ HEADER ══ -->
+  <header class="reveal d1">
+    <!-- Logo SVG -->
+    <div class="header-logo">
+      <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:5px;color:rgba(200,168,75,0.5);text-transform:uppercase;margin-bottom:6px;">by Relitix</div>
+      <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:42px;font-weight:600;color:#c8a84b;letter-spacing:3px;line-height:1;">ENCORE</div>
+      <svg width="130" height="46" viewBox="0 0 220 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top:4px;opacity:0.7;">
+        <rect x="18" y="38" width="9" height="18" fill="#c8a84b"/>
+        <rect x="30" y="30" width="9" height="26" fill="#c8a84b"/>
+        <rect x="42" y="22" width="9" height="34" fill="#c8a84b"/>
+        <line x1="10" y1="38" x2="34" y2="14" stroke="#c8a84b" stroke-width="3" stroke-linecap="round"/>
+        <line x1="34" y1="14" x2="58" y2="38" stroke="#c8a84b" stroke-width="3" stroke-linecap="round"/>
+        <line x1="10" y1="56" x2="58" y2="56" stroke="#c8a84b" stroke-width="3" stroke-linecap="round"/>
+        <line x1="10" y1="38" x2="10" y2="56" stroke="#c8a84b" stroke-width="3" stroke-linecap="round"/>
+        <line x1="58" y1="38" x2="58" y2="56" stroke="#c8a84b" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="10" cy="38" r="4.5" fill="#080b12" stroke="#c8a84b" stroke-width="2"/>
+        <circle cx="34" cy="14" r="4.5" fill="#080b12" stroke="#c8a84b" stroke-width="2"/>
+        <circle cx="58" cy="38" r="4.5" fill="#080b12" stroke="#c8a84b" stroke-width="2"/>
+        <line x1="58" y1="37" x2="70" y2="20" stroke="#c8a84b" stroke-width="2.5" stroke-linecap="round"/>
+        <polyline points="62,20 70,20 70,28" fill="none" stroke="#c8a84b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <text x="82" y="54" font-family="Georgia, serif" font-weight="bold" font-size="34" fill="#c8a84b" letter-spacing="1">R</text>
+        <text x="104" y="54" font-family="Georgia, serif" font-weight="bold" font-size="34" fill="#c8a84b">ēlitix</text>
+      </svg>
+    </div>
+    <div class="header-right">
+      <div class="doc-label">Investor Brief · 2026</div>
+      <div class="doc-title">Encore · The Data Compounding Effect</div>
+    </div>
+  </header>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero reveal d2">
+    <div class="hero-left">
+      <div class="hero-eyebrow">Why Brokerage Data is the New Balance Sheet</div>
+      <h1>Every contract is a deposit.<br>The <em>Lakehouse</em> is the vault.</h1>
+      <p class="hero-body">
+        Real estate brokerages sit on a goldmine of proprietary transaction intelligence — and most of it evaporates the moment a deal closes. Encore extracts, structures, and compounds that data into a sovereign asset that grows more valuable with every transaction.
+      </p>
+    </div>
+
+    <div class="hero-stat-bar">
+      <div class="hero-stat">
+        <div class="stat-num">97%</div>
+        <div class="stat-label">Of contract data lost post-close</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num">3×</div>
+        <div class="stat-label">Data value multiplier at year 3</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num">0</div>
+        <div class="stat-label">Public competitors have this data</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SECTION 1: EXTRACTION DEPTH ══ -->
+  <section class="extraction-section">
+    <div class="section-label reveal d3">01 — From Raw Document to Structured Intelligence</div>
+
+    <div class="pull-quote reveal d3">
+      A contract is not just a legal document. It is a <em>dense signal</em> — rich with pricing psychology, negotiation behavior, partner preferences, and market timing. Encore reads every word.
+    </div>
+
+    <div class="extraction-flow reveal d4">
+
+      <!-- CARD 1: Raw -->
+      <div class="flow-card fc-raw">
+        <div class="fc-step">Input</div>
+        <div class="fc-icon">📄</div>
+        <div class="fc-title">Raw Contract</div>
+        <ul class="fc-items">
+          <li>PDF / DocuSign</li>
+          <li>Unstructured prose</li>
+          <li>Buried clauses</li>
+          <li>Handwritten addenda</li>
+          <li>Legal boilerplate</li>
+        </ul>
+        <div class="fc-depth"><div class="fc-bar" style="width:15%"></div></div>
+      </div>
+
+      <!-- Arrow 1 -->
+      <div class="flow-arrow-col">
+        <div class="flow-arrow-inner">
+          <div class="arrow-shaft" style="height:60px"></div>
+          <div class="arrow-head">▼</div>
+          <div class="arrow-label">Extract</div>
+        </div>
+      </div>
+
+      <!-- CARD 2: Extraction -->
+      <div class="flow-card fc-extract">
+        <div class="fc-step">AI Review</div>
+        <div class="fc-icon">🤖</div>
+        <div class="fc-title">AI Extraction</div>
+        <ul class="fc-items">
+          <li>Entity recognition</li>
+          <li>Clause classification</li>
+          <li>Date & term parsing</li>
+          <li>Concession flagging</li>
+          <li>Risk scoring</li>
+        </ul>
+        <div class="fc-depth"><div class="fc-bar" style="width:40%"></div></div>
+      </div>
+
+      <!-- Arrow 2 -->
+      <div class="flow-arrow-col">
+        <div class="flow-arrow-inner">
+          <div class="arrow-shaft" style="height:60px"></div>
+          <div class="arrow-head">▼</div>
+          <div class="arrow-label">Structure</div>
+        </div>
+      </div>
+
+      <!-- CARD 3: Structured -->
+      <div class="flow-card fc-struct">
+        <div class="fc-step">Structured Fields</div>
+        <div class="fc-icon">🗂️</div>
+        <div class="fc-title">Typed Schema</div>
+        <ul class="fc-items">
+          <li>Seller net proceeds</li>
+          <li>Contingency timelines</li>
+          <li>Commission splits</li>
+          <li>Inspection outcomes</li>
+          <li>Partner usage (title, lender…)</li>
+        </ul>
+        <div class="fc-depth"><div class="fc-bar" style="width:70%"></div></div>
+      </div>
+
+      <!-- Arrow 3 -->
+      <div class="flow-arrow-col">
+        <div class="flow-arrow-inner">
+          <div class="arrow-shaft" style="height:60px"></div>
+          <div class="arrow-head">▼</div>
+          <div class="arrow-label">Govern</div>
+        </div>
+      </div>
+
+      <!-- CARD 4: Lakehouse -->
+      <div class="flow-card fc-lake">
+        <div class="fc-step">Sovereign Asset</div>
+        <div class="fc-icon">🏛️</div>
+        <div class="fc-title">Lakehouse</div>
+        <ul class="fc-items">
+          <li>Delta Lake tables</li>
+          <li>Access governance</li>
+          <li>Cross-deal analytics</li>
+          <li>Time-series indexing</li>
+          <li>Revenue-ready APIs</li>
+        </ul>
+        <div class="fc-depth"><div class="fc-bar" style="width:100%"></div></div>
+      </div>
+
+    </div><!-- /extraction-flow -->
+
+    <div class="depth-legend reveal d5">
+      <span class="depth-legend-label">Data Depth</span>
+      <div class="depth-legend-bar"></div>
+      <span class="depth-legend-end">Maximum Intelligence</span>
+    </div>
+
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ══ SECTION 2: LAKEHOUSE STRUCTURE ══ -->
+  <section class="lakehouse-section">
+    <div class="section-label reveal d3">02 — The Lakehouse: Secure, Sovereign, Structured</div>
+
+    <div class="lake-grid reveal d4">
+
+      <div class="lake-layer ll-bronze">
+        <div class="ll-icon">🥉</div>
+        <div class="ll-tier">Bronze Layer · Raw Ingestion</div>
+        <div class="ll-title">Every Document, Preserved</div>
+        <div class="ll-tags">
+          <span class="ll-tag">IMMUTABLE</span>
+          <span class="ll-tag">AUDIT LOG</span>
+          <span class="ll-tag">VERSIONED</span>
+        </div>
+        <div class="ll-desc">
+          Original contracts stored verbatim. Full legal chain of custody. Nothing ever deleted — every future re-analysis starts here.
+        </div>
+      </div>
+
+      <div class="lake-layer ll-silver">
+        <div class="ll-icon">🥈</div>
+        <div class="ll-tier">Silver Layer · Cleansed & Typed</div>
+        <div class="ll-title">Fields, Not Files</div>
+        <div class="ll-tags">
+          <span class="ll-tag">TYPED SCHEMA</span>
+          <span class="ll-tag">VALIDATED</span>
+          <span class="ll-tag">QUERYABLE</span>
+        </div>
+        <div class="ll-desc">
+          Every extracted field normalized, deduplicated, and validated. Agent names, prices, dates, and clauses become queryable facts.
+        </div>
+      </div>
+
+      <div class="lake-layer ll-gold">
+        <div class="ll-icon">🥇</div>
+        <div class="ll-tier">Gold Layer · Analytics-Ready</div>
+        <div class="ll-title">Intelligence at Scale</div>
+        <div class="ll-tags">
+          <span class="ll-tag">AGGREGATED</span>
+          <span class="ll-tag">PREDICTIVE</span>
+          <span class="ll-tag">API-READY</span>
+        </div>
+        <div class="ll-desc">
+          Cross-deal metrics, agent benchmarks, market velocity signals, and partner performance — ready for products, licensing, or internal strategy.
+        </div>
+      </div>
+
+    </div><!-- /lake-grid -->
+
+    <!-- Three pillars -->
+    <div class="pillar-row reveal d5">
+
+      <div class="pillar-cell pi-secure">
+        <div class="pillar-icon-wrap">🔐</div>
+        <div class="pillar-text-wrap">
+          <div class="pillar-head">Secure</div>
+          <div class="pillar-body">Role-based access controls, field-level encryption, and complete audit trails. No third party ever touches raw data.</div>
+        </div>
+      </div>
+
+      <div class="pillar-cell pi-sovereign">
+        <div class="pillar-icon-wrap">⚖️</div>
+        <div class="pillar-text-wrap">
+          <div class="pillar-head">Sovereign</div>
+          <div class="pillar-body">The brokerage owns 100% of its data. No MLS sharing, no platform lock-in. A true proprietary moat that competitors cannot replicate.</div>
+        </div>
+      </div>
+
+      <div class="pillar-cell pi-structured">
+        <div class="pillar-icon-wrap">🗃️</div>
+        <div class="pillar-text-wrap">
+          <div class="pillar-head">Structured</div>
+          <div class="pillar-body">Delta Lake schema enforcement ensures every new transaction slots into the same analytical framework — making the dataset stronger with every deal.</div>
+        </div>
+      </div>
+
+    </div><!-- /pillar-row -->
+
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ══ SECTION 3: COMPOUNDING VALUE ══ -->
+  <section class="compound-section">
+    <div class="section-label reveal d3">03 — The Force Multiplier: Value Compounds Over Time</div>
+
+    <div class="pull-quote reveal d3">
+      Public data is a commodity. <em>Private, structured, time-series transaction data is a moat.</em> The longer a brokerage runs Encore, the wider that moat becomes.
+    </div>
+
+    <div class="compound-layout reveal d4">
+
+      <!-- Chart -->
+      <div class="compound-chart">
+
+        <div class="y-labels">
+          <span class="y-label">High</span>
+          <span class="y-label"></span>
+          <span class="y-label">Mid</span>
+          <span class="y-label"></span>
+          <span class="y-label">Low</span>
+        </div>
+
+        <div class="x-labels">
+          <span class="x-label">Y1</span>
+          <span class="x-label">Y2</span>
+          <span class="x-label">Y3</span>
+          <span class="x-label">Y4</span>
+          <span class="x-label">Y5</span>
+          <span class="x-label">Y10</span>
+        </div>
+
+        <svg class="chart-svg" viewBox="0 0 500 220" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%"   stop-color="#c8a84b" stop-opacity="0.18"/>
+              <stop offset="100%" stop-color="#c8a84b" stop-opacity="0.01"/>
+            </linearGradient>
+          </defs>
+
+          <!-- Grid lines -->
+          <line class="chart-gridline" x1="0" y1="44" x2="500" y2="44"/>
+          <line class="chart-gridline" x1="0" y1="88" x2="500" y2="88"/>
+          <line class="chart-gridline" x1="0" y1="132" x2="500" y2="132"/>
+          <line class="chart-gridline" x1="0" y1="176" x2="500" y2="176"/>
+
+          <!-- Public data (flat/slow baseline) -->
+          <polyline class="line-public"
+            points="0,195 83,190 166,185 249,182 332,178 500,170"/>
+          <text class="chart-anno-dim" x="400" y="165">Public Data</text>
+
+          <!-- Compound area fill -->
+          <path class="area-compound"
+            d="M0,195 C40,192 80,185 120,172 C160,158 180,138 210,115 C240,92 270,70 300,50 C330,30 370,16 500,6 L500,220 L0,220 Z"/>
+
+          <!-- Compound curve -->
+          <path class="line-compound"
+            d="M0,195 C40,192 80,185 120,172 C160,158 180,138 210,115 C240,92 270,70 300,50 C330,30 370,16 500,6"/>
+
+          <!-- Milestone dots -->
+          <circle class="chart-dot" cx="83"  cy="186" r="4"/>
+          <circle class="chart-dot" cx="166" cy="168" r="4"/>
+          <circle class="chart-dot" cx="249" cy="138" r="5"/>
+          <circle class="chart-dot" cx="332" cy="100" r="5"/>
+          <circle class="chart-dot" cx="500" cy="6"   r="6"/>
+
+          <!-- Annotations -->
+          <text class="chart-anno" x="90"  y="175">×1.4</text>
+          <text class="chart-anno" x="173" y="155">×2.1</text>
+          <text class="chart-anno" x="256" y="125">×3.2</text>
+          <text class="chart-anno" x="339" y="87">×5×</text>
+          <text class="chart-anno" x="440" y="22" font-size="10" font-weight="bold">10×+</text>
+        </svg>
+
+      </div><!-- /compound-chart -->
+
+      <!-- Milestones -->
+      <div class="compound-right">
+
+        <div class="compound-milestone cm-y1">
+          <div class="cm-year">Y1</div>
+          <div class="cm-content">
+            <div class="cm-headline">Foundation Established</div>
+            <div class="cm-body">Baseline dataset formed. Agent performance benchmarks emerge. First partner capture rates visible.</div>
+          </div>
+        </div>
+
+        <div class="compound-milestone cm-y2">
+          <div class="cm-year">Y2</div>
+          <div class="cm-content">
+            <div class="cm-headline">Pattern Recognition</div>
+            <div class="cm-body">Seasonal trends, top-agent clause patterns, and inspection correlation models become statistically valid.</div>
+          </div>
+        </div>
+
+        <div class="compound-milestone cm-y3">
+          <div class="cm-year">Y3</div>
+          <div class="cm-content">
+            <div class="cm-headline">Predictive Capability</div>
+            <div class="cm-body">Deal velocity forecasting, commission risk models, and lender performance scoring go live. Data licensing becomes viable.</div>
+          </div>
+        </div>
+
+        <div class="compound-milestone cm-y5">
+          <div class="cm-year">Y5</div>
+          <div class="cm-content">
+            <div class="cm-headline">Strategic Moat</div>
+            <div class="cm-body">5 years of closed-loop transaction data. No competitor can buy this. Valuation multiple expansion driven by proprietary dataset.</div>
+          </div>
+        </div>
+
+        <div class="compound-milestone cm-y10">
+          <div class="cm-year">Y10</div>
+          <div class="cm-content">
+            <div class="cm-headline">Generational Asset</div>
+            <div class="cm-body">A decade of sovereign data. Institutional-grade. Licensable. An entirely new revenue vertical built on data the market never knew existed.</div>
+          </div>
+        </div>
+
+      </div><!-- /compound-right -->
+
+    </div><!-- /compound-layout -->
+
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ══ THE MOAT — SUMMARY NUMBERS ══ -->
+  <section class="moat-section">
+    <div class="moat-banner reveal d4">
+
+      <div class="moat-item">
+        <div class="moat-number" style="font-variant-numeric: tabular-nums; letter-spacing: -2px;">100%</div>
+        <div class="moat-label">Brokerage Ownership</div>
+        <div class="moat-desc">No data shared with MLSs, portals, or third-party platforms. Every field, every clause — yours alone.</div>
+      </div>
+
+      <div class="moat-item">
+        <div class="moat-number">∞</div>
+        <div class="moat-label">Compounding Returns</div>
+        <div class="moat-desc">Unlike physical assets, structured data does not depreciate. Each new transaction makes the entire dataset stronger.</div>
+      </div>
+
+      <div class="moat-item">
+        <div class="moat-number">3</div>
+        <div class="moat-label">New Revenue Verticals</div>
+        <div class="moat-desc">Data licensing, predictive agent services, and ancillary partner intelligence — none of which exist without the Lakehouse.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ PITCH DECK CTA ══ -->
+  <div class="pitch-cta reveal d5">
+    <div class="pitch-cta-inner">
+      <div class="pitch-cta-label">Want the full story?</div>
+      <div class="pitch-cta-headline">See the Investor Pitch Deck</div>
+      <div class="pitch-cta-sub">Five slides. The complete Encore platform narrative — from data problem to compounding asset.</div>
+      <a href="pitch.html" class="pitch-cta-btn">View Pitch Deck →</a>
+    </div>
+  </div>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="reveal d5">
+    <div class="footer-left">
+      <div class="footer-tagline">Secure. Structured. <em>Sovereign</em>.</div>
+      <div class="footer-sub">Encore by Relitix · Enterprise Data Platform for Real Estate Brokerages</div>
+    </div>
+    <div class="footer-right">
+      <div class="footer-url">relitix.com/encore</div>
+      <div class="footer-confidential">Confidential · For Investor Use Only</div>
+    </div>
+  </footer>
+
+</div><!-- /page -->
+</body>
+</html>
